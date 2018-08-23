@@ -111,7 +111,7 @@ export default {
 	        .then((result) => {
 	        	let wea = result.body.HeWeather6[0].now;
 	            // console.log(wea)
-				this.$set(this.nowWea,'wcode','https://cdn.heweather.com/cond_icon/'+wea.cond_code+'.png');
+				this.$set(this.nowWea,'wcode','http://cdn.heweather.com/cond_icon/'+wea.cond_code+'.png');
 				this.$set(this.nowWea,'txt',wea.cond_txt);
 				this.$set(this.nowWea,'tmp',wea.tmp);
 				this.$set(this.nowWea,'hum',wea.hum);
@@ -128,7 +128,7 @@ export default {
 	        for(i;i<fwea.length;i++)
 	        {
 				this.$set(this.futWea[i],'date',fwea[i].date);
-				this.$set(this.futWea[i],'wcode','https://cdn.heweather.com/cond_icon/'+fwea[i].cond_code_d+'.png');
+				this.$set(this.futWea[i],'wcode','http://cdn.heweather.com/cond_icon/'+fwea[i].cond_code_d+'.png');
 				this.$set(this.futWea[i],'txt',fwea[i].cond_txt_d);
 				this.$set(this.futWea[i],'mintmp',fwea[i].tmp_min);
 				this.$set(this.futWea[i],'maxtmp',fwea[i].tmp_max);
@@ -153,7 +153,7 @@ export default {
         .then((result) => {
         	let wea = result.body.HeWeather6[0].now;
             // console.log(wea)
-			this.$set(this.nowWea,'wcode','https://cdn.heweather.com/cond_icon/'+wea.cond_code+'.png');
+			this.$set(this.nowWea,'wcode','http://cdn.heweather.com/cond_icon/'+wea.cond_code+'.png');
 			this.$set(this.nowWea,'txt',wea.cond_txt);
 			this.$set(this.nowWea,'tmp',wea.tmp);
 			this.$set(this.nowWea,'hum',wea.hum);
@@ -170,7 +170,7 @@ export default {
         for(i;i<fwea.length;i++)
         {
 			this.$set(this.futWea[i],'date',fwea[i].date);
-			this.$set(this.futWea[i],'wcode','https://cdn.heweather.com/cond_icon/'+fwea[i].cond_code_d+'.png');
+			this.$set(this.futWea[i],'wcode','http://cdn.heweather.com/cond_icon/'+fwea[i].cond_code_d+'.png');
 			this.$set(this.futWea[i],'txt',fwea[i].cond_txt_d);
 			this.$set(this.futWea[i],'mintmp',fwea[i].tmp_min);
 			this.$set(this.futWea[i],'maxtmp',fwea[i].tmp_max);
